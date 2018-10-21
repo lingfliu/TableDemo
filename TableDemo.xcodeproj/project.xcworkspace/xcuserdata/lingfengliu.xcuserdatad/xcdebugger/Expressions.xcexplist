@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TestTableView.tableView(_:didDeselectRowAt:):TestTableView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "FadeInAnimationrTransition.animateTransition(using:):CustomDialog.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "toView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in FadeInAnimationrTransition.animateTransition(using:):CustomDialog.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "toView.bounds">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomDialog.presentCenter(from:):CustomDialog.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CustomDialog.loadContentView(view:):CustomDialog.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
