@@ -28,6 +28,10 @@ class TestTableViewDataSource: NSObject, UITableViewDataSource {
         cell?.title.text = "hello"
      
         cell?.delegate = self
+        
+        cell?.selectionStyle = .none
+        cell?.selectedBackgroundView = UIView(frame: (cell?.frame)!)
+        cell?.selectedBackgroundView?.backgroundColor = UIColor.red
         return cell!
     }
 }

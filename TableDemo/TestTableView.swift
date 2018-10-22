@@ -34,7 +34,7 @@ class TestTableView: UITableView {
 
 extension TestTableView:UITableViewDelegate {
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        var cell = tableView.dequeueReusableCell(withIdentifier: TestTableViewCellId, for: indexPath) as? TestTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: TestTableViewCellId) as? TestTableViewCell
         
         if cell != nil {
             cell?.setSelected(false, animated: false)
@@ -42,17 +42,20 @@ extension TestTableView:UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var cell = tableView.dequeueReusableCell(withIdentifier: TestTableViewCellId, for: indexPath) as? TestTableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: TestTableViewCellId) as? TestTableViewCell
         if cell != nil {
             if indexPath.row == selectedIdx {
                 //deselect
                 selectedIdx = -1
-                cell?.setSelected(false, animated: false)
+                cell?.setSelected(false, animated: true)
             }
             else {
                 cell?.setSelected(true, animated: true)
-//                tableView.selectRow(at: indexPath, animated: false, scrollPosition: .middle)
             }
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 64
     }
 }

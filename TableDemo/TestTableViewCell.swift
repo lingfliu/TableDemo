@@ -18,6 +18,8 @@ class TestTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var btnSubmit: UIButton!
     
+    @IBOutlet weak var bg: UIView!
+    
     var delegate:TestTableViewCellDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +31,7 @@ class TestTableViewCell: UITableViewCell {
         let nib = UINib(nibName: "TestTableViewCell", bundle: Bundle.main)
         let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = self.frame
+        
         self.addSubview(view)
         
     }
@@ -39,12 +42,17 @@ class TestTableViewCell: UITableViewCell {
 
         if selected {
             // Configure the view for the selected state
-            title.backgroundColor = UIColor.red
-            title.textColor = UIColor.white
+            UIView.animate(withDuration: 0.3) {
+                self.bg.backgroundColor = UIColor.red
+                self.title.textColor = UIColor.white
+                self.btnSubmit.setTitleColor(UIColor.white, for: .normal)
+            }
+
         }
         else {
-            title.backgroundColor = UIColor.white
-            title.textColor = UIColor.black
+            self.bg.backgroundColor = UIColor.white
+            self.title.textColor = UIColor.black
+            self.btnSubmit.setTitleColor(UIColor.black, for: .normal)
         }
         
         super.setSelected(selected, animated: animated)

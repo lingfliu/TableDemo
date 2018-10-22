@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TestTableViewCell.init(style:reuseIdentifier:):TestTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TestCustomDialog.viewDidLoad():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "v.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TestTableViewCell.setSelected(_:animated:):TestTableViewCell.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
